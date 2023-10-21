@@ -1,0 +1,164 @@
+.second-page {
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    font-family: 'Manrope', sans-serif;
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        color: rgba(25, 92, 98, 0.9);
+    }
+
+    .extra {
+        text-align: center;
+        width: 100%;
+        padding: 0 10%;
+        margin-bottom: 10px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        line-height: 30px;
+        font-size: 18px;
+        
+        span {
+            color: green;
+            font-weight: bolder;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .box-container {
+            display: grid;
+            place-content: center;
+            cursor: pointer;
+
+            .first {
+                display: flex;
+                gap: 40px;
+                place-content: center;
+                .box {
+                    background-color: rgba(25, 92, 98, 0.9);
+                    width: 180px;
+                    height: 30vh;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 10px;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    img {
+                        width: 70px;
+                        justify-self: center;
+                        cursor: pointer;
+                    }
+
+                    
+                    p {
+                        text-align: center;
+                        color: white;
+                        font-weight: 800;
+                        font-size: 15px;
+                    }
+                }
+                .box-3 {
+                    img {
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .second {
+                display: flex;
+                place-content: center;
+                gap: 40px;
+                margin-top: 20px;
+
+                .box {
+                    background-color: rgba(25, 92, 98, 0.9);
+                    width: 180px;
+                    height: 30vh;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 10px;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    img {
+                        width: 80px;
+                        justify-self: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: white;
+                        font-weight: 800;
+                    }
+                }
+            }
+            .third {
+                display: flex;
+                place-content: center;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                .box {
+                    background-color: rgba(25, 92, 98, 0.9);
+                    width: 180px;
+                    height: 30vh;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 10px;
+                    gap: 20px;
+                    cursor: pointer;
+
+                    img {
+                        width: 50px;
+                        justify-self: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        color: white;
+                        font-weight: 800;
+                    }
+                }
+            }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .second-page {
+        height: 100%;
+        border-top: 1px solid black;
+        margin-bottom: 20px;
+
+        .box-container {
+
+            .first {
+                display: grid;
+                place-content: center;
+
+                .box {
+                    width: 300px;
+                }
+            }
+
+            .second {
+                display: grid;
+                .box {
+                    width: 300px;
+                }
+            }
+
+            .third {
+                .box {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

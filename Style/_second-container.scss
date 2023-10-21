@@ -1,0 +1,100 @@
+.second-container {
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+    margin-left: 30px;
+    z-index: 400;
+    position: relative;
+
+    .text-container {
+        text-align: center; 
+
+        h3 {
+            font-size: 45px;
+            text-align: center;         
+            line-height: 90px;
+            text-transform: uppercase;
+            align-self: center;
+            letter-spacing: 1px;
+            color: rgb(25, 92, 98);
+            // width: 50%;
+            // justify-self: center;    
+
+            // .img {
+            //     width: 70px;
+            //     height: 13vh;
+            //     position: absolute;
+            //     left: 19rem;
+            //     top: -12px;
+            // }
+        }
+
+        .solution {
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            align-self: center;
+            font-family: 'Manrope', sans-serif;
+            line-height: 55px;
+        }
+
+        .services {
+            font-weight: bold;
+            font-style: oblique;
+        }
+    }
+
+    .image-container {
+        width: 100%;
+        padding-top: 75%; 
+        position: relative;
+        
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 50%;
+            // object-fit: cover; 
+            border-radius: 10px;
+            // border: 10px solid;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .second-container {
+        display: grid;
+        place-content: center;
+        gap: 0;
+        margin: 0;
+        .text-container {
+            h3 {
+                font-size: 40px;
+                line-height: 80px;
+                margin-top: 30px;
+
+            }
+        }
+        .image-container {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        padding-top: 100%; /* Adjust aspect ratio for tablet */
+    }
+}
+@media screen and (max-width: 480px) {
+    .image-container {
+        padding-top: 150%; 
+        margin-right: 50px;
+    }
+}
