@@ -581,13 +581,16 @@
 }
 .fourth-page .container .first {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .fourth-page .container .first img {
-  margin-left: 20px;
+  width: 150px;
+  align-self: center;
 }
 .fourth-page .container .first p {
   margin-top: 20px;
-  width: 59%;
+  width: 100%;
   text-align: center;
   color: white;
   font-family: "Manrope", sans-serif;
@@ -599,14 +602,14 @@
   flex-direction: column;
 }
 .fourth-page .container .second h4 {
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: white;
   text-align: center;
 }
 .fourth-page .container .second .text-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 100px;
   align-self: center;
   color: white;
@@ -617,7 +620,8 @@
   cursor: pointer;
 }
 .fourth-page .container .third h4 {
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 10px;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -631,44 +635,56 @@
 .fourth-page .container .fourth {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin-right: 20px;
 }
 .fourth-page .container .fourth h4 {
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 10px;
   color: white;
   text-align: center;
+  text-transform: uppercase;
 }
 .fourth-page .container .fourth .social-links {
   display: flex;
-  margin: 20px 0;
-  gap: 40px;
-  align-self: center;
+  justify-content: space-between;
 }
 .fourth-page .container .fourth .social-links div {
   cursor: pointer;
 }
 .fourth-page .container .fourth .back-to-the-top {
+  width: 15vw;
+  justify-self: center;
+  align-self: center;
+  background-color: black;
+  color: white;
   border: none;
   border-radius: 10px;
-  display: flex;
-  gap: 20px;
-  place-content: center;
-  align-items: center;
-  font-size: 17px;
   cursor: pointer;
-  background-color: black;
-  height: 12vh;
-  color: white;
-  width: 90%;
+  height: 30%;
+  font-size: 15px;
+}
+
+footer {
+  border-top: 1px solid white;
 }
 
 @media screen and (max-width: 1000px) {
   .fourth-page {
     display: grid;
     height: 100%;
-    overflow: hidden;
   }
-  .fourth-page .container {
-    grid-template-columns: none;
+  .fourth-page .container .second {
+    margin-left: 30px;
+  }
+  .fourth-page .container .fourth .back-to-the-top {
+    margin-bottom: 80px;
+    width: 100%;
+    height: 8vh;
+  }
+  footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 footer {
@@ -704,6 +720,28 @@ footer .terms a {
   footer .terms {
     display: flex;
     place-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fourth-page .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fourth-page .container .first {
+    margin-bottom: 20px;
+  }
+  .fourth-page .container .fourth h4 {
+    margin-left: 25px;
+  }
+  .fourth-page .container .fourth .social-links {
+    align-self: center;
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+  }
+  .fourth-page .container .fourth .back-to-the-top {
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 999px) {
