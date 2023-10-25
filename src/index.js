@@ -4,18 +4,13 @@ const dropDownOne = document.querySelector('.down-menu-one');
 const whatWeDo = document.querySelector('.what-we-do');
 const dropDownTwo = document.querySelector('.down-menu-two');
 
-whoWeAre.addEventListener('click', () => {
-    if (!dropDownOne.classList.contains('show')) {
-        dropDownOne.classList.add('show')
-        if (dropDownTwo.classList.contains('show')) {
-            dropDownTwo.classList.remove('show');
-        }
-    } else {
-        dropDownOne.classList.remove('show');
-    }
+whatWeDo.addEventListener('click', function() {
+    event.preventDefault()
+    removemenu()
 })
 
-whatWeDo.addEventListener('click', function() {
+// removing menu
+function removemenu() {
     if (!dropDownTwo.classList.contains('show')) {
         dropDownTwo.classList.add('show')
         if (dropDownOne.classList.contains('show')) {
@@ -24,7 +19,7 @@ whatWeDo.addEventListener('click', function() {
     } else {
         dropDownTwo.classList.remove('show')
     }
-})
+}
 
 // menu bar mobile view 
 const firstPage = document.querySelector('.first-page');
@@ -44,3 +39,41 @@ const jobSeekerBtn = document.querySelector('.job-seeker');
 jobSeekerBtn.addEventListener('click', function() {
     window.location.href = 'job-seeker.html';
 })
+
+
+// displaying lab tech services
+const LTS = document.querySelector('.lab-tech-serivces');
+LTS.addEventListener('click', function() {
+    window.location.href = 'lab-tech-service.html';
+})
+
+
+// making a smooth transition 
+document.querySelectorAll('.down-menu-two a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            // Calculate the offset to consider the fixed header
+            const headerOffset = document.querySelector('header').offsetHeight;
+
+            // Scroll to the target element with an offset
+            window.scrollTo({
+                top: targetElement.offsetTop - headerOffset,
+                behavior: 'smooth',
+            });
+            removemenu()
+        }
+    });
+});
+
+// back to the top arrow 
+const backToTheTop = document.querySelector('.back-to-the-top');
+backToTheTop.addEventListener('click', scrollToTop)
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
