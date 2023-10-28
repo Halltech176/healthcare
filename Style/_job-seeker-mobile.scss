@@ -1,5 +1,5 @@
 @media screen and (max-width: 999px) {
-    .container {
+    .job-container {
         height: 100%;
         width: 100%;
         overflow: hidden;
@@ -30,84 +30,86 @@
 
 
             }
-        
-            .details {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                gap: 20px;
+            form{
                 align-self: center;
+                .details {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-self: center;
+            
+                    .input {
+                        position: relative;
+                        // width: 250px;
         
-                .input {
-                    position: relative;
-                    // width: 250px;
-    
-                    input {
-                        width: 90vw;
-                        padding: 10px;
-                        border: 1.5px solid #2F6E70;
-                        border-radius: 5px;
-                        background: rgba(188, 255, 242, 0.32);
-                        font-size: 1em;
-                        font-weight: 600;
-                        height: 7vh;
-    
-        
-                        &:valid + label,
-                        &:focus + label{
-                            color: white;
-                            transform: translateX(10px) translateY(-7px);
-                            font-size: 0.7em;
-                            padding: 0 10px;
-                            background: #2F6E70;
-                            border: 1px solid black;
-                            border-radius: 2px;
-                            letter-spacing: 1px;
-                        }
-                    }
-        
-                    label {
-                        position: absolute;
-                        left: 0;
-                        padding: 13px;
-                        font-size: 1em;
-                        text-transform: uppercase;
-                        color: #2F6E70;
-                        transition: 0.5s;
-                    }
-                }
-        
-                .position-input {
-                    select {
-                        width: 90vw;
-                        padding: 10px;
-                        border: 1.5px solid #2F6E70;
-                        border-radius: 5px;
-                        background: rgba(188, 255, 242, 0.32);
-                        font-size: 1em;
-                        font-weight: 600;
-                        height: 7vh;
-        
-                        // replacing the arrow 
-                        appearance: none;
-                        background-image: url(/assets/logo/caret-down-solid.svg);
-                        background-repeat: no-repeat;
-                        background-position: right 10px top 25%;
-                        background-size: 20px;
-        
-                        &:focus,
-                        &:hover {
-                            border-color: #164547;
-                        }
-                        option {
+                        input {
+                            width: 90vw;
+                            padding: 10px;
+                            border: 1.5px solid #2F6E70;
+                            border-radius: 5px;
+                            background: rgba(188, 255, 242, 0.32);
+                            font-size: 1em;
                             font-weight: 600;
-                            width: 0px;
-                            background-color: #fff;
+                            height: 7vh;
+        
+            
+                            &:valid + label,
+                            &:focus + label{
+                                color: white;
+                                transform: translateX(10px) translateY(-7px);
+                                font-size: 0.7em;
+                                padding: 0 10px;
+                                background: #2F6E70;
+                                border: 1px solid black;
+                                border-radius: 2px;
+                                letter-spacing: 1px;
+                            }
+                        }
+            
+                        label {
+                            position: absolute;
+                            left: 0;
+                            padding: 13px;
+                            font-size: 1em;
+                            text-transform: uppercase;
+                            color: #2F6E70;
+                            transition: 0.5s;
+                        }
+                    }
+            
+                    .position-input {
+                        select {
+                            width: 90vw;
+                            padding: 10px;
+                            border: 1.5px solid #2F6E70;
+                            border-radius: 5px;
+                            background: rgba(188, 255, 242, 0.32);
+                            font-size: 1em;
+                            font-weight: 600;
+                            height: 7vh;
+            
+                            // replacing the arrow 
+                            appearance: none;
+                            background-image: url(/assets/logo/caret-down-solid.svg);
+                            background-repeat: no-repeat;
+                            background-position: right 10px top 25%;
+                            background-size: 20px;
+            
+                            &:focus,
+                            &:hover {
+                                border-color: #164547;
+                            }
+                            option {
+                                font-weight: 600;
+                                width: 0px;
+                                background-color: #fff;
+                            }
                         }
                     }
                 }
             }
-        
+            
             .file-uploading {
                 display: flex;
                 flex-direction: column;
@@ -178,7 +180,7 @@
             
             .submit-form {
                 margin-bottom: 40px;
-                width: 80%;
+                width: 50%;
                 background-color: #164547;
                 color: #fff;
                 border: none;
@@ -191,7 +193,7 @@
 
 
 @media screen and (min-width: 768px) {
-    .container {
+    .job-container {
         .sub-container {
             .details {
                 .input {
@@ -203,14 +205,14 @@
             }
 
             .submit-form {
-                width: 100%;
+                width: 50%;
             }
         }
     }
 }
 
 @media screen and (min-width: 1000px) {
-    .container {
+    .job-container {
         .sub-container {
             display: none;
         }

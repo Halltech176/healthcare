@@ -1,0 +1,140 @@
+.container {
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: moveUp 3s  1 forwards;
+    
+    
+    .home-container {
+        // background-color: red;
+        align-self: flex-end;
+        margin-right: 50px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    
+    .who {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 35px;
+        color: rgba(25, 92, 98, 1);
+        letter-spacing: 1px;
+        margin-bottom: 50px;
+    }
+
+    .first-container {
+        display: flex;
+        margin: 20px 50px;
+        // gap: 10px;
+        place-content: center;
+        gap: 20px;
+
+        img {
+            height: 50vh;
+            margin-left: 100px;
+        }
+        .one {
+            font-size: 30px;
+           
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            // border: 2px solid;
+            border-radius: 10px;
+            margin-right: 100px;
+            h3 {
+                font-size: 25px;
+                // margin-top: 0px;
+                color: black;
+                text-align: center;
+            }
+
+            p {
+                font-weight: 500;
+                width: 90%;
+                align-self: center;
+                // font-size: 16px;
+                letter-spacing: .5px;
+                line-height: 25px;
+                text-indent: 20px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .second-container-2 {
+        // background-color: red;
+        margin: 10px 80px;
+        display: flex;
+        gap: 10px;
+
+        .text {
+            // border: 1px solid;
+            border-radius: 10px;
+            padding: 10px;
+            .two {
+                color: black;
+                font-size: 30px;
+            }
+    
+            p {
+                padding-bottom: 10px;
+                text-indent: 20px;
+                line-height: 25px;
+                width: 90%;
+            }
+        }
+       
+        img {
+            height: 50vh;
+        }
+    }
+
+    .third-container {
+        display: flex;
+        margin: 20px 40px;
+        gap: 10px;
+
+        img {
+            height: 60vh;
+            margin-bottom: 20px;
+        }
+
+        .first {
+            .one {
+                margin-top: 50px;
+            }
+        }
+        .text {
+            // border: 2px solid;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            .two {
+                color: black;
+                font-size: 25px;
+                text-align: center;
+            }
+            p {
+                text-indent: 20px;
+                line-height: 25px;
+                width: 90%;
+                
+            }
+        }
+    }
+}
+
+@keyframes moveUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

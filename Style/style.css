@@ -349,11 +349,8 @@
   line-height: 30px;
   font-size: 18px;
 }
-.second-page .extra span {
+.second-page .extra a {
   color: green;
-  font-weight: bolder;
-  font-size: 20px;
-  cursor: pointer;
 }
 .second-page .box-container {
   display: grid;
@@ -577,23 +574,24 @@
   place-content: center;
   background-color: #2F6E70;
   width: 100%;
-  height: 45vh;
+  height: 37vh;
+  margin-top: 40px;
 }
-.fourth-page .container {
+.fourth-page .fourth-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px;
 }
-.fourth-page .container .first {
+.fourth-page .fourth-container .first {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
-.fourth-page .container .first img {
+.fourth-page .fourth-container .first img {
   width: 150px;
   align-self: center;
 }
-.fourth-page .container .first p {
+.fourth-page .fourth-container .first p {
   margin-top: 10px;
   width: 100%;
   text-align: center;
@@ -602,46 +600,46 @@
   letter-spacing: 1px;
   font-weight: 500;
 }
-.fourth-page .container .second {
+.fourth-page .fourth-container .second {
   display: flex;
   flex-direction: column;
 }
-.fourth-page .container .second h4 {
+.fourth-page .fourth-container .second h4 {
   font-size: 20px;
   text-transform: uppercase;
   color: white;
   text-align: center;
 }
-.fourth-page .container .second .text-container {
+.fourth-page .fourth-container .second .text-container {
   display: flex;
   gap: 20px;
   align-self: center;
   color: white;
   text-transform: uppercase;
 }
-.fourth-page .container .second .text-container .one p, .fourth-page .container .second .text-container .two p {
+.fourth-page .fourth-container .second .text-container .one p, .fourth-page .fourth-container .second .text-container .two p {
   margin-bottom: 5px;
   cursor: pointer;
   font-size: 14px;
 }
-.fourth-page .container .third h4 {
+.fourth-page .fourth-container .third h4 {
   font-size: 20px;
   color: white;
   text-align: center;
   text-transform: uppercase;
 }
-.fourth-page .container .third p {
+.fourth-page .fourth-container .third p {
   font-size: 14px;
   color: white;
   text-align: center;
   cursor: pointer;
 }
-.fourth-page .container .fourth {
+.fourth-page .fourth-container .fourth {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
 }
-.fourth-page .container .fourth h4 {
+.fourth-page .fourth-container .fourth h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: white;
@@ -649,19 +647,19 @@
   text-transform: uppercase;
   margin-right: 20px;
 }
-.fourth-page .container .fourth .social-links {
+.fourth-page .fourth-container .fourth .social-links {
   display: flex;
   align-self: center;
   margin-bottom: 10px;
   gap: 30px;
 }
-.fourth-page .container .fourth .social-links div {
+.fourth-page .fourth-container .fourth .social-links div {
   cursor: pointer;
 }
-.fourth-page .container .fourth .social-links .fa-brands {
+.fourth-page .fourth-container .fourth .social-links .fa-brands {
   font-size: 25px;
 }
-.fourth-page .container .fourth .back-to-the-top {
+.fourth-page .fourth-container .fourth .back-to-the-top {
   width: 6vw;
   justify-self: center;
   align-self: center;
@@ -699,7 +697,7 @@ footer .terms a {
     display: grid;
     height: 100%;
   }
-  .fourth-page .container .first {
+  .fourth-page .fourth-container .first {
     margin-left: 0;
   }
   footer {
@@ -724,19 +722,19 @@ footer .terms a {
   }
 }
 @media screen and (max-width: 768px) {
-  .fourth-page .container {
+  .fourth-page .fourth-container {
     display: flex;
     flex-direction: column;
   }
-  .fourth-page .container .first {
+  .fourth-page .fourth-container .first {
     margin-bottom: 10px;
   }
-  .fourth-page .container .fourth {
+  .fourth-page .fourth-container .fourth {
     display: grid;
     place-content: center;
     margin-bottom: 20px;
   }
-  .fourth-page .container .fourth .back-to-the-top {
+  .fourth-page .fourth-container .fourth .back-to-the-top {
     height: 6vh;
     width: 50px;
     align-self: center;
@@ -747,91 +745,94 @@ footer .terms a {
   .fourth-page {
     display: grid;
   }
-  .fourth-page .container {
+  .fourth-page .fourth-container {
     display: flex;
     flex-direction: column;
   }
-  .fourth-page .container .first {
+  .fourth-page .fourth-container .first {
     margin-left: 0;
     width: 50%;
   }
-  .fourth-page .container .first img {
+  .fourth-page .fourth-container .first img {
     align-self: flex-start;
     margin-left: 10px;
   }
-  .fourth-page .container .first p {
+  .fourth-page .fourth-container .first p {
     width: 70%;
     margin-left: 10px;
   }
-  .fourth-page .container .second {
+  .fourth-page .fourth-container .second {
     display: grid;
     margin-left: 10px;
     margin-bottom: 20px;
   }
-  .fourth-page .container .second h4 {
+  .fourth-page .fourth-container .second h4 {
     text-align: start;
   }
-  .fourth-page .container .third {
+  .fourth-page .fourth-container .third {
     align-self: flex-start;
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .fourth-page .container .third h4 {
+  .fourth-page .fourth-container .third h4 {
     text-align: start;
   }
-  .fourth-page .container .third p {
+  .fourth-page .fourth-container .third p {
     text-align: start;
   }
-  .fourth-page .container .fourth {
+  .fourth-page .fourth-container .fourth {
     align-self: flex-start;
     margin-left: 10px;
     margin-top: 20px;
   }
-  .fourth-page .container .fourth h4 {
+  .fourth-page .fourth-container .fourth h4 {
     text-align: start;
   }
-  .fourth-page .container .fourth .back-to-the-top {
+  .fourth-page .fourth-container .fourth .back-to-the-top {
     align-self: flex-start;
     justify-self: flex-start;
   }
 }
 @media screen and (max-width: 999px) {
-  .container {
+  .job-container {
     height: 100%;
     width: 100%;
     overflow: hidden;
   }
-  .container .another-container {
+  .job-container .another-container {
     display: none;
   }
-  .container .sub-container {
+  .job-container .sub-container {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
   }
-  .container .sub-container .logo-container {
+  .job-container .sub-container .logo-container {
     align-self: center;
   }
-  .container .sub-container .logo-container img {
+  .job-container .sub-container .logo-container img {
     height: 25vh;
   }
-  .container .sub-container .logo-container img {
+  .job-container .sub-container .logo-container img {
     height: 25vh;
   }
-  .container .sub-container .details {
+  .job-container .sub-container form {
+    align-self: center;
+  }
+  .job-container .sub-container form .details {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     align-self: center;
   }
-  .container .sub-container .details .input {
+  .job-container .sub-container form .details .input {
     position: relative;
   }
-  .container .sub-container .details .input input {
+  .job-container .sub-container form .details .input input {
     width: 90vw;
     padding: 10px;
     border: 1.5px solid #2F6E70;
@@ -841,7 +842,7 @@ footer .terms a {
     font-weight: 600;
     height: 7vh;
   }
-  .container .sub-container .details .input input:valid + label, .container .sub-container .details .input input:focus + label {
+  .job-container .sub-container form .details .input input:valid + label, .job-container .sub-container form .details .input input:focus + label {
     color: white;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.7em;
@@ -851,7 +852,7 @@ footer .terms a {
     border-radius: 2px;
     letter-spacing: 1px;
   }
-  .container .sub-container .details .input label {
+  .job-container .sub-container form .details .input label {
     position: absolute;
     left: 0;
     padding: 13px;
@@ -860,7 +861,7 @@ footer .terms a {
     color: #2F6E70;
     transition: 0.5s;
   }
-  .container .sub-container .details .position-input select {
+  .job-container .sub-container form .details .position-input select {
     width: 90vw;
     padding: 10px;
     border: 1.5px solid #2F6E70;
@@ -877,50 +878,50 @@ footer .terms a {
     background-position: right 10px top 25%;
     background-size: 20px;
   }
-  .container .sub-container .details .position-input select:focus, .container .sub-container .details .position-input select:hover {
+  .job-container .sub-container form .details .position-input select:focus, .job-container .sub-container form .details .position-input select:hover {
     border-color: #164547;
   }
-  .container .sub-container .details .position-input select option {
+  .job-container .sub-container form .details .position-input select option {
     font-weight: 600;
     width: 0px;
     background-color: #fff;
   }
-  .container .sub-container .file-uploading {
+  .job-container .sub-container .file-uploading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
-  .container .sub-container .file-uploading .upload-section .select-file {
+  .job-container .sub-container .file-uploading .upload-section .select-file {
     display: flex;
     gap: 10px;
   }
-  .container .sub-container .file-uploading .upload-section .select-file button {
+  .job-container .sub-container .file-uploading .upload-section .select-file button {
     width: 100%;
     background-color: #164547;
     height: 8vh;
     border: none;
     border-radius: 5px;
   }
-  .container .sub-container .file-uploading .upload-section .select-file p {
+  .job-container .sub-container .file-uploading .upload-section .select-file p {
     font-weight: 600;
     font-size: 15px;
     text-align: center;
   }
-  .container .sub-container .file-uploading .upload-section .file-status {
+  .job-container .sub-container .file-uploading .upload-section .file-status {
     display: grid;
     place-content: center;
     margin-bottom: 20px;
     gap: 10px;
     margin-top: 10px;
   }
-  .container .sub-container .file-uploading .upload-section .file-status p {
+  .job-container .sub-container .file-uploading .upload-section .file-status p {
     color: red;
     font-weight: 500;
     font-size: 15px;
   }
-  .container .sub-container .file-uploading .upload-section .file-status .file-status-color {
+  .job-container .sub-container .file-uploading .upload-section .file-status .file-status-color {
     justify-self: center;
     background-color: rgba(238, 47, 47, 0.4);
     width: 50px;
@@ -929,7 +930,7 @@ footer .terms a {
     display: grid;
     place-content: center;
   }
-  .container .sub-container .file-uploading .upload-section .file-status .file-status-color .color-2 {
+  .job-container .sub-container .file-uploading .upload-section .file-status .file-status-color .color-2 {
     width: 40px;
     height: 40px;
     background-color: rgb(220, 38, 38);
@@ -937,15 +938,15 @@ footer .terms a {
     display: grid;
     place-content: center;
   }
-  .container .sub-container .file-uploading .upload-section .file-status .file-status-color .green {
+  .job-container .sub-container .file-uploading .upload-section .file-status .file-status-color .green {
     background-color: rgb(4, 47, 46);
   }
-  .container .sub-container .file-uploading .upload-section .file-status .green {
+  .job-container .sub-container .file-uploading .upload-section .file-status .green {
     background-color: rgba(25, 92, 98, 0.28);
   }
-  .container .sub-container .submit-form {
+  .job-container .sub-container .submit-form {
     margin-bottom: 40px;
-    width: 80%;
+    width: 50%;
     background-color: #164547;
     color: #fff;
     border: none;
@@ -954,18 +955,18 @@ footer .terms a {
   }
 }
 @media screen and (min-width: 768px) {
-  .container .sub-container .details .input {
+  .job-container .sub-container .details .input {
     width: 100%;
   }
-  .container .sub-container .details input {
+  .job-container .sub-container .details input {
     width: 100vw;
   }
-  .container .sub-container .submit-form {
-    width: 100%;
+  .job-container .sub-container .submit-form {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1000px) {
-  .container .sub-container {
+  .job-container .sub-container {
     display: none;
   }
   .another-container {
@@ -1133,6 +1134,239 @@ footer .terms a {
     height: 50px;
   }
 }
+#lab-technicians {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+}
+#lab-technicians h3 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: rgba(25, 92, 98, 0.9);
+}
+#lab-technicians .another-text {
+  text-align: center;
+  width: 100%;
+  padding: 0 10%;
+  margin-bottom: 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  line-height: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+#lab-technicians .another-text a {
+  color: green;
+}
+#lab-technicians .box-container {
+  display: grid;
+  place-content: center;
+}
+#lab-technicians .box-container .first {
+  display: flex;
+  gap: 40px;
+  place-content: center;
+}
+#lab-technicians .box-container .first .box {
+  background-color: rgba(25, 92, 98, 0.9);
+  width: 200px;
+  height: 30vh;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+  gap: 20px;
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+#lab-technicians .box-container .first .box img {
+  width: 80px;
+  justify-self: center;
+}
+#lab-technicians .box-container .first .box p {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#lab-technicians .box-container .second {
+  display: flex;
+  place-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+#lab-technicians .box-container .second .box {
+  background-color: rgba(25, 92, 98, 0.9);
+  width: 200px;
+  height: 30vh;
+  display: grid;
+  place-content: center;
+  border-radius: 10px;
+  gap: 20px;
+  cursor: pointer;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+#lab-technicians .box-container .second .box img {
+  width: 80px;
+  justify-self: center;
+}
+#lab-technicians .box-container .second .box p {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  #lab-technicians {
+    height: 100%;
+    border-top: 1px solid black;
+    margin-top: 10px;
+  }
+  #lab-technicians .box-container .first {
+    display: grid;
+    place-content: center;
+  }
+  #lab-technicians .box-container .first .box {
+    width: 300px;
+  }
+  #lab-technicians .box-container .second {
+    display: grid;
+  }
+  #lab-technicians .box-container .second .box {
+    width: 300px;
+  }
+}
+.container {
+  background-color: #ccc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: moveUp 3s 1 forwards;
+}
+.container .home-container {
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.container .who {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: rgb(25, 92, 98);
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.container .first-container {
+  display: flex;
+  margin: 20px 50px;
+  place-content: center;
+  gap: 20px;
+}
+.container .first-container img {
+  height: 50vh;
+  margin-left: 100px;
+}
+.container .first-container .one {
+  font-size: 30px;
+}
+.container .first-container .text {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+.container .first-container .text h3 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+.container .first-container .text p {
+  font-weight: 500;
+  width: 90%;
+  align-self: center;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  text-indent: 20px;
+  padding-bottom: 20px;
+}
+.container .second-container-2 {
+  margin: 10px 80px;
+  display: flex;
+  gap: 10px;
+}
+.container .second-container-2 .text {
+  border-radius: 10px;
+  padding: 10px;
+}
+.container .second-container-2 .text .two {
+  color: black;
+  font-size: 30px;
+}
+.container .second-container-2 .text p {
+  padding-bottom: 10px;
+  text-indent: 20px;
+  line-height: 25px;
+  width: 90%;
+}
+.container .second-container-2 img {
+  height: 50vh;
+}
+.container .third-container {
+  display: flex;
+  margin: 20px 40px;
+  gap: 10px;
+}
+.container .third-container img {
+  height: 60vh;
+  margin-bottom: 20px;
+}
+.container .third-container .first .one {
+  margin-top: 50px;
+}
+.container .third-container .text {
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.container .third-container .text .two {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.container .third-container .text p {
+  text-indent: 20px;
+  line-height: 25px;
+  width: 90%;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.admin-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.admin-container .first {
+  background-color: rgb(25, 92, 98);
+}
+
 .lts-container {
   height: 100vh;
   display: flex;
@@ -1142,13 +1376,15 @@ footer .terms a {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  margin-right: 100px;
 }
 .lts-container .first h3 {
   justify-self: center;
   align-self: center;
   color: rgb(47, 110, 112);
-  font-size: 30px;
-  margin-left: 100px;
+  font-size: 25px;
+  margin-left: 50px;
+  text-align: center;
 }
 .lts-container .first img {
   justify-self: flex-end;
@@ -1165,12 +1401,14 @@ footer .terms a {
   margin-top: 10px;
 }
 .lts-container .second h3 {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 .lts-container .second p {
   padding: 0 100px;
-  font-size: 18px;
+  font-size: 15px;
+  text-indent: 20px;
+  margin-bottom: 10px;
 }
 .lts-container .last {
   align-self: flex-end;
@@ -1189,8 +1427,17 @@ footer .terms a {
 }
 
 @media screen and (max-width: 768px) {
+  .lts-container .first {
+    margin-right: 0;
+  }
   .lts-container .first h3 {
     font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 0;
+  }
+  .lts-container .first img {
+    display: none;
   }
   .lts-container .second p {
     padding: 0 20px;
