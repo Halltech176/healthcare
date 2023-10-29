@@ -1365,8 +1365,184 @@ footer .terms a {
 }
 .admin-container .first {
   background-color: rgb(25, 92, 98);
+  width: 20%;
+  display: flex;
+  place-content: center;
+}
+.admin-container .first p {
+  align-self: center;
+}
+.admin-container .second {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.admin-container .second .first-ass {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.admin-container .second .first-ass .thuram {
+  width: 12%;
+}
+.admin-container .second .first-ass .home {
+  cursor: pointer;
+}
+.admin-container .second .second-ass {
+  display: flex;
+  padding: 0 0 0 50px;
+  gap: 100px;
+}
+.admin-container .second .second-ass .box {
+  background-color: rgb(248, 250, 252);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 35%;
+  height: 30vh;
+  border-radius: 10px;
+}
+.admin-container .second .second-ass .taken-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.admin-container .second .second-ass .taken-container-1 .num {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-left: 30px;
+  font-size: 30px;
+  border-bottom: 1px solid;
+}
+.admin-container .second .second-ass .taken-container-1 .progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 20px;
+  padding-left: 2px;
+  margin-bottom: 10px;
+}
+.admin-container .second .second-ass .taken-container-1 .progress-container .progress-bar {
+  width: 65%;
+  height: 25px;
+  background-color: rgb(25, 92, 98);
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  border-radius: 10px; /* Add rounded corners */
+  transition: width 0.3s ease; /* Add smooth transition */
+}
+.admin-container .second .second-ass .taken-container-1 .text {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.admin-container .second .second-ass .taken-container-2 {
+  display: flex;
+  flex-direction: column;
+}
+.admin-container .second .second-ass .taken-container-2 .first-section {
+  align-self: flex-end;
+}
+.admin-container .second .second-ass .taken-container-2 .progress-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+.admin-container .second .second-ass .taken-container-2 .progress-container .progress {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.admin-container .second .second-ass .taken-container-2 .progress-container .progress .progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-clip-path: conic-gradient(transparent 0%, transparent 50%, #4CAF50 0%, #4CAF50 100%);
+          clip-path: conic-gradient(transparent 0%, transparent 50%, #4CAF50 0%, #4CAF50 100%);
+  transform: rotate(90deg);
+  background: transparent;
+  position: absolute;
+}
+.admin-container .second .second-ass .taken-container-2 .progress-container .progress .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+.admin-container .second .job-data-page {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.admin-container .second .job-data-page .job-container {
+  max-height: 220px;
+  overflow-y: auto;
+}
+.admin-container .second .job-data-page .job-container table {
+  width: 93%;
+  margin-left: 20px;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+.admin-container .second .job-data-page .job-container table thead tr th {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.admin-container .second .job-data-page .job-container table tbody tr td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+.admin-container .second .job-data-page .job-container table tbody tr #applicant-file {
+  display: flex;
+  cursor: pointer;
+}
+.admin-container .second .job-data-page .job-container table tbody tr #applicant-file img {
+  width: 30px;
 }
 
+@media screen and (max-width: 791px) {
+  .admin-container .first {
+    display: none;
+  }
+  .admin-container .second {
+    width: 100%;
+  }
+  .admin-container .second .first-ass {
+    padding: 0;
+    display: flex;
+    place-content: center;
+  }
+  .admin-container .second .first-ass .thuram {
+    width: 30%;
+    justify-self: center;
+  }
+  .admin-container .second .first-ass .home {
+    display: none;
+  }
+  .admin-container .second .second-ass {
+    display: grid;
+    padding: 0;
+  }
+  .admin-container .second .second-ass .taken-container-1 {
+    justify-self: center;
+    width: 80%;
+  }
+  .admin-container .second .second-ass .taken-container-2 {
+    justify-self: center;
+    width: 80%;
+  }
+  .admin-container .second .job-data-page .job-container table {
+    width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+  }
+}
 .lts-container {
   height: 100vh;
   display: flex;
