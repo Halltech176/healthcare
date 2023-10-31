@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap");
 
 * {
   padding: 0;
@@ -11,17 +10,252 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+body {
+  color: #000000;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem;
+  background-color: #2f6e70;
+  color: white;
+  margin: 8rem 0rem 0rem 0rem;
 
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    // gap: 2rem;
+    img {
+      width: 5rem;
+    }
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 0.9rem;
 
-@import './first-page';
-@import './second-container';
-@import './second-page';
-@import './third-page';
-@import './fourth-page';
-@import './job-seeker-mobile';
-@import './l-t-s';
-@import './who-we-are';
-@import './admin';
-@import './lab-read-more';
-@import './contact-us';
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+
+      li span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+.care {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  h1 {
+    text-align: center;
+    margin: 2rem 0rem;
+  }
+
+  div {
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+
+    .image {
+      width: 4rem;
+      height: 4rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 1rem;
+      background: linear-gradient(135deg, #f7b8af, #f8452d);
+      box-shadow: 0 6px 10px 0 rgba(16, 73, 189, 0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  div:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  div:nth-of-type(even) {
+    background-color: linear-gradient(
+      0deg,
+      rgba(119, 89, 237, 0.08),
+      hsla(0, 0%, 100%, 0.08)
+    );
+    cursor: pointer;
+  }
+  div:nth-of-type(odd) {
+    // background-color: blue;
+    cursor: pointer;
+    background: linear-gradient(
+      0deg,
+      rgba(39, 153, 246, 0.08),
+      hsla(0, 0%, 100%, 0.08)
+    );
+  }
+}
+.nursing-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  h1 {
+    text-align: center;
+    margin: 2rem 0rem;
+  }
+
+  div {
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+
+    .image {
+      width: 4rem;
+      height: 4rem;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 1rem;
+      box-shadow: 0 6px 10px 0 rgba(16, 73, 189, 0.3);
+      background-color: #195c62;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  div:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  div:nth-of-type(odd) {
+    background-color: linear-gradient(
+      0deg,
+      rgba(119, 89, 237, 0.08),
+      hsla(0, 0%, 100%, 0.08)
+    );
+    cursor: pointer;
+  }
+  div:nth-of-type(even) {
+    // background-color: blue;
+    cursor: pointer;
+    background: linear-gradient(
+      0deg,
+      rgba(39, 153, 246, 0.08),
+      hsla(0, 0%, 100%, 0.08)
+    );
+  }
+}
+
+.service-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 80%;
+  margin: 5rem auto;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/image-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  transform: translateY(-7rem);
+  max-width: 80%;
+  margin: 0 auto;
+
+  .section {
+    padding: 0.6rem;
+    background-color: #195c62;
+    color: white;
+    border-radius: 0.5rem;
+
+    h3 {
+      text-align: center;
+      margin: 1rem 0rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 0.9rem;
+      letter-spacing: 0.02rem;
+      color: rgba(255, 255, 240, 0.7);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 3rem 0rem 0rem 0rem;
+
+    .content {
+      align-items: flex-start;
+    }
+    .section {
+      align-items: flex-start;
+    }
+  }
+  .care,
+  .nursing-service {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../assets/images/image-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    font-size: 1rem;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@import "./first-page";
+@import "./second-container";
+@import "./second-page";
+@import "./third-page";
+@import "./fourth-page";
+@import "./job-seeker-mobile";
+@import "./l-t-s";
+@import "./who-we-are";
+@import "./admin";
+@import "./lab-read-more";
+@import "./contact-us";

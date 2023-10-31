@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/logo/page.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/logo/page.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/style.css" />
     <title>Contact Us</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contact-container">
-        <div class="first">
-            <img src="/assets/logo/home.svg" alt="" class="home">
+      <section class="contact-badge">
+        <div class="hero-text">
+          <h1>Contact Us</h1>
         </div>
-        <div class="second">
-            <img src="/assets/images/contact-photo.svg" alt="" class="contact-logo">
-            <div class="sub-1">
-                <h3>Contact us</h3>
-                <div class="under-sub-1">
-                    <p class="one">REACH OUT FOR FREE CONSULTATION</p>
-                    <div class="web">
-                        <img src="/assets/logo/web logo.svg" alt="">
-                        <p>www.thuramhealthcare.com</p>
-                        <img src="/assets/logo/copy-web.svg" alt="">
-                    </div>
-                    <div class="email">
-                        <img src="/assets/logo/email.svg" alt="">
-                        <p>admin@thuramhealthcare.com</p>
-                    </div>
-                </div>
-                <div class="under-sub-2">
-                    <div class="first">
-                        <img src="/assets/logo/call-twp.svg" alt="">
-                     <p>Phone Number: </p>
-                        <p>+1 437-241-9877</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <img src="/assets/images/contact-photo.svg" alt="" class="hero-image" />
+      </section>
 
+      <article class="contact-section">
+        <div class="link-section">
+          <h3 class="contact-title">Contact us</h3>
+
+          <h4 class="contact-subtitle">REACH OUT FOR FREE CONSULTATION</h4>
+          <div class="contact-link">
+            <img src="/assets/logo/web logo.svg" alt="" />
+            <p>www.thuramhealthcare.com</p>
+
+            <!-- <img src="/assets/logo/copy-web.svg" alt="" /> -->
+          </div>
+          <div class="contact-link">
+            <img src="/assets/logo/email.svg" alt="" />
+            <p>admin@thuramhealthcare.com</p>
+          </div>
+          <div class="contact-link">
+            <img src="/assets/logo/call-twp.svg" alt="" />
+            <p>Phone Number: +1 437-241-9877</p>
+          </div>
+        </div>
         <div class="third">
-            <h3>How can we help you?</h3>
-            <form action="">
-                <div class="details">
+          <h3>How can we help you?</h3>
+          <form action="">
+            <section class="form-details">
+              <div class="input">
                 <label for="name">Name</label>
-                <input type="text">
-                <div class="email-and-phone">
-                    <label for="email">Email</label>
-                    <input type="email">
-                    <label for="phone">Phone</label>
-                    <input type="tel">
+                <input type="text" />
+              </div>
+              <section class="email-phone">
+                <div class="input">
+                  <label for="email">Email</label>
+                  <input type="email" />
                 </div>
+                <div class="input">
+                  <label for="phone">Phone</label>
+                  <input type="tel" />
+                </div>
+              </section>
+              <div class="input">
                 <label for="help">How can we help you?</label>
                 <textarea name="help" id="" cols="10" rows="4"></textarea>
+              </div>
+              <div class="input">
                 <label for="message-you">May we email you about this</label>
                 <select name="" id="">
-                    <option value="">YES</option>
-                    <option value="">NO</option>
+                  <option value="">YES</option>
+                  <option value="">NO</option>
                 </select>
-                <p>you can always opt out from these emails</p>
-                </div>
-                <button>Submit</button>
-            </form>
+              </div>
+              <p>you can always opt out from these emails</p>
+            </section>
+            <button>Submit</button>
+          </form>
         </div>
+      </article>
     </div>
     <script src="./src/job-seeker.js"></script>
-</body>
+    <script type="module" src="./src/footer.js"></script>
+  </body>
 </html>

@@ -24,7 +24,7 @@
     color: rgba(0, 0, 0, 1);
     font-size: 18px;
     a {
-        color: green;
+      color: green;
     }
   }
 
@@ -46,7 +46,7 @@
         border-radius: 10px;
         gap: 20px;
         cursor: pointer;
-        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
         img {
           width: 80px;
@@ -79,7 +79,7 @@
         border-radius: 10px;
         gap: 20px;
         cursor: pointer;
-        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
         img {
           width: 80px;
@@ -116,9 +116,9 @@
       .second {
         display: grid;
         .box {
-            width: 300px;
+          width: 300px;
         }
-    }
+      }
     }
   }
 }

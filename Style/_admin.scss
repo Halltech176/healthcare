@@ -1,228 +1,230 @@
 .admin-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .first {
+    background-color: rgba(25, 92, 98, 1);
+    width: 20%;
     display: flex;
-    width: 100%;
-    height: 100vh;
-    
-    .first {
-        background-color: rgba(25, 92, 98, 1);
-        width: 20%;
-        display: flex;
-        place-content: center;
-        // height: 100vh;
-        p {
-            align-self: center;
-        }
+    place-content: center;
+    // height: 100vh;
+    p {
+      align-self: center;
+    }
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    // height: 100vh;
+
+    .first-ass {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 100px;
+
+      .thuram {
+        width: 12%;
+      }
+      .home {
+        cursor: pointer;
+      }
     }
 
-    .second {
+    .second-ass {
+      display: flex;
+      padding: 0 0 0 50px;
+      gap: 100px;
+
+      .box {
+        background-color: rgb(248, 250, 252);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        width: 35%;
+        height: 30vh;
+        border-radius: 10px;
+      }
+
+      .taken-container-1 {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        // height: 100vh;
+        justify-content: space-evenly;
 
-        .first-ass {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 100px;
-
-            .thuram {
-                width: 12%;
-            }
-            .home {
-                cursor: pointer;
-            }
+        .num {
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          padding-left: 30px;
+          font-size: 30px;
+          border-bottom: 1px solid;
         }
 
-        .second-ass {
-            display: flex;
-            padding: 0 0 0 50px;
-            gap: 100px;
+        .progress-container {
+          width: 100%;
+          background-color: #eee;
+          border-radius: 20px;
+          padding-left: 2px;
+          margin-bottom: 10px;
 
-            .box {
-                background-color: rgb(248 250 252);
-                box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-                width: 35%;
-                height: 30vh;
-                border-radius: 10px;
-            }
-
-            .taken-container-1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-
-                .num {
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    letter-spacing: 1.5px;
-                    padding-left: 30px;
-                    font-size: 30px;
-                    border-bottom: 1px solid;
-                }
-
-                .progress-container {
-                    width: 100%;
-                    background-color: #eee;
-                    border-radius: 20px;
-                    padding-left: 2px;
-                    margin-bottom: 10px;
-                    
-                    .progress-bar {
-                        width: 65%;
-                        height: 25px;
-                        background-color: rgba(25, 92, 98, 1);
-                        text-align: center;
-                        color: white;
-                        line-height: 30px;
-                        border-radius: 10px; /* Add rounded corners */
-                        transition: width 0.3s ease; /* Add smooth transition */
-                    }
-                }
-
-                .text {
-                    text-align: center;
-                    font-size: 20px;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                }
-            }
-
-            .taken-container-2 {
-                display: flex;
-                flex-direction: column;
-
-                .first-section {
-                    align-self: flex-end;
-                }
-
-                .progress-container {
-                    position: relative;
-                    width: 200px;
-                    height: 200px;
-                    align-self: center;
-                   
-    
-                    .progress {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                        position: relative;
-                       
-    
-                        .progress-circle {
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 50%;
-                            clip-path: conic-gradient(transparent 0%, transparent 50%, #4CAF50 0%, #4CAF50 100%);
-                            transform: rotate(90deg);
-                            background: transparent;
-                            position: absolute;
-                        }
-    
-                        .progress-text {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            font-size: 24px;
-                            font-weight: bold;
-                        }
-                    }
-                }    
-            }
+          .progress-bar {
+            width: 65%;
+            height: 25px;
+            background-color: rgba(25, 92, 98, 1);
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            border-radius: 10px; /* Add rounded corners */
+            transition: width 0.3s ease; /* Add smooth transition */
+          }
         }
 
-        .job-data-page {
-            padding-top: 30px;
-            padding-bottom: 50px;
-            .job-container {
-                max-height: 220px;
-                 overflow-y: auto;
-            table {
-                width: 93%;
-                margin-left: 20px;
-                border-collapse: collapse;
-                border: 1px solid #ccc;
-
-                thead {
-                    tr {
-                        th {
-                            background-color: #f2f2f2;
-                            border: 1px solid #ccc;
-                            padding: 8px;
-                        }
-                    }
-                }
-
-                tbody {
-                    tr {
-                        td {
-                            border: 1px solid #ccc;
-                            padding: 8px;
-                            text-align: center;
-                        }
-                        #applicant-file {
-                            display: flex;
-                            cursor: pointer;
-
-                            img {
-                                width: 30px;
-                            }
-                        }
-                    }
-                }
-            }
-            }
+        .text {
+          text-align: center;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
         }
+      }
+
+      .taken-container-2 {
+        display: flex;
+        flex-direction: column;
+
+        .first-section {
+          align-self: flex-end;
+        }
+
+        .progress-container {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          align-self: center;
+
+          .progress {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: relative;
+
+            .progress-circle {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              clip-path: conic-gradient(
+                transparent 0%,
+                transparent 50%,
+                #4caf50 0%,
+                #4caf50 100%
+              );
+              transform: rotate(90deg);
+              background: transparent;
+              position: absolute;
+            }
+
+            .progress-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
     }
+
+    .job-data-page {
+      padding-top: 30px;
+      padding-bottom: 50px;
+      .job-container {
+        max-height: 220px;
+        overflow-y: auto;
+        table {
+          width: 93%;
+          margin-left: 20px;
+          border-collapse: collapse;
+          border: 1px solid #ccc;
+
+          thead {
+            tr {
+              th {
+                background-color: #f2f2f2;
+                border: 1px solid #ccc;
+                padding: 8px;
+              }
+            }
+          }
+
+          tbody {
+            tr {
+              td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: center;
+              }
+              #applicant-file {
+                display: flex;
+                cursor: pointer;
+
+                img {
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 791px) {
-    .admin-container {
-        .first{
-            display: none;
-        }
-        .second {
-            width: 100%;
-            
-            .first-ass {
-                padding: 0;
-                display: flex;
-                place-content: center;
-                .thuram {
-                    width: 30%;
-                    justify-self: center;
-                    
-                }
-                .home {
-                    display: none;
-                }
-            }
-
-            .second-ass {
-                // align-self: center;
-                display: grid;
-                padding: 0;
-                .taken-container-1 {
-                    justify-self: center;
-                    width: 80%;
-                }
-                .taken-container-2 {
-                    justify-self: center;
-                    width: 80%;
-                }
-            }
-
-            .job-data-page {
-                .job-container {
-                    table {
-                        width: 100%;
-                        margin: 0;
-                        overflow-y: scroll;
-                    }
-                }
-            }
-        }
+  .admin-container {
+    .first {
+      display: none;
     }
+    .second {
+      width: 100%;
+
+      .first-ass {
+        padding: 0;
+        display: flex;
+        place-content: center;
+        .thuram {
+          width: 30%;
+          justify-self: center;
+        }
+        .home {
+          display: none;
+        }
+      }
+
+      .second-ass {
+        // align-self: center;
+        display: grid;
+        padding: 0;
+        .taken-container-1 {
+          justify-self: center;
+          width: 80%;
+        }
+        .taken-container-2 {
+          justify-self: center;
+          width: 80%;
+        }
+      }
+
+      .job-data-page {
+        .job-container {
+          table {
+            width: 100%;
+            margin: 0;
+            overflow-y: scroll;
+          }
+        }
+      }
+    }
+  }
 }
